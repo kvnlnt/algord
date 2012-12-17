@@ -39,9 +39,9 @@ puts "total = " + t.to_s
 # Notes
 # -----
 # I used phi as my constant on my first try to calculate nth values of fibo 
-# numbers. Apparently, E(n)=4*E(n-1)+E(n-2) works too. I think this probably works
-# better as I ran into calculation errors with the constant and therefore
-# had to tune it to the 14th decimal place for accuracy.
+# numbers. E(n)=4*E(n-1)+E(n-2) is the only reliable equation however. Using
+# phi will result in calculation errors and therefore one has toto tune it 
+# to the nth decimal place for accuracy.
 
 # E(n)   = even fibo number
 # E(n-1) = previous even fibo number
