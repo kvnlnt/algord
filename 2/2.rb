@@ -1,36 +1,15 @@
-a = {:n => 2, :n1 => 0, :n2 => 0}
-t = 0
+a = {:n => 2, :n1 => 0, :n2 => 0} # array
+t = 0                             # total
  
 while a[:n] < 4000000
-  puts a[:n]
-  t = t + a[:n]
-  a[:n2] = a[:n1]
-  a[:n1] = a[:n]
-  a[:n] = 4 * a[:n1] + a[:n2]
+  puts a[:n]                    # output n
+  t      = t + a[:n]            # update total
+  a[:n2] = a[:n1]               # shift n2 to n1
+  a[:n1] = a[:n]                # shift n1 to n 
+  a[:n]  = 4 * a[:n1] + a[:n2]  # update n
 end
 
-puts "total = " + t.to_s
-
-# My first try:
-
-# def fib_sum_even_to(n)
-#   x = 0
-#   t = 0
-#   while t < n
-#     puts x.to_s + " = " + nth(x).to_s + " +"
-#     t = t + nth(x)
-#     x = x + 3
-#   end
-#   puts "total = " + t.to_s
-# end
-
-# def nth(n)
-#   phi = 1.61803398874989
-#   f   = (phi**n/Math.sqrt(5)).round
-#   return f
-# end
-
-# puts fib_sum_even_to(4000000)
+puts "total = " + t.to_s        # output total
 
 # Answer
 # ------
