@@ -1,21 +1,21 @@
-n = ARGV[0].to_i
+k = ARGV[0].to_i 
+p = [] # primes
+2.upto(k) { |x| p << x if ("1" * x) !~ /^1?$|^(11+?)\1+$/ } # create list of primes up to k
 
-c, d = 1, 232700000
+# Calc powers
+p.each_with_index do |x, i|
+  break if x >= Math.sqrt(k)   
+  pwr = (Math.log(k) / Math.log(x)).floor
+  p[i] = x**pwr
+end 
 
-while c == 1
-  a = 0
-  if d % 20 == 0
-    (1..20).each do |x|
-      if d % x > 0
-        a = 1
-        break
-      end
-    end 
-  end
-  puts "#{d}"
-  c = 0 if a == 0
-  d += 20
+t = 1 # total
+p.each do |x|
+  t *= x
 end
+
+# output
+puts t
 
 # Question
 # --------
@@ -29,3 +29,10 @@ end
 # Notes
 # -----
 # http://projecteuler.net/project/resources/005_f10c761be4eb8fc6ddd71c48b18c95fe/005_overview.pdf
+#
+# To calculate the product of consecutive integers:
+# create list of primes up to largest integer in your consective list (call that "k")
+# loop each prime and raise it to the highest power less than k
+# for k=20, the prime list results in: 2^4 * 3^2 * 5 * 7 * 11 * 13 * 17 * 19
+# which becomes 16 * 9 * 5 * 7 * 11 * 13 * 17 * 19 = 232,792,560
+# notice the 2 ^ 4th  and the 3 ^ 2nd? The other primes can't be raised to a higher power than 1
