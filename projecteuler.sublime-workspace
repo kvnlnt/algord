@@ -147,14 +147,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "5/5.rb",
-			"settings":
-			{
-				"buffer_size": 599,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -180,8 +172,9 @@
 	},
 	"file_history":
 	[
-		"/E/projecteuler/4/4.rb",
+		"/E/projecteuler/5/research.rb",
 		"/E/projecteuler/5/5.rb",
+		"/E/projecteuler/4/4.rb",
 		"/E/projecteuler/4/research.rb",
 		"/E/projecteuler/3/3.rb",
 		"/E/projecteuler/3/rd.rb",
@@ -306,8 +299,7 @@
 		"/C/apps/posterica/posterica.commtrans.org/app/models/note.rb",
 		"/C/apps/posterica/posterica.commtrans.org/app/controllers/notes_controller.rb",
 		"/H/Projects/Posterica/R&D/app/config.rb",
-		"/C/apps/posterica/posterica.commtrans.org/config/initializers/in_columns.rb",
-		"/C/apps/posterica/posterica.commtrans.org/app/assets/stylesheets/stops.css"
+		"/C/apps/posterica/posterica.commtrans.org/config/initializers/in_columns.rb"
 	],
 	"find":
 	{
@@ -364,6 +356,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p[i]",
 			"factor",
 			"route_view_select",
 			"selec",
@@ -490,8 +483,7 @@
 			"h3",
 			"Date.today",
 			"'yes'",
-			"overwrit",
-			"update_status"
+			"overwrit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -499,6 +491,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"i",
 			"f",
 			"@username",
 			"</h3>",
@@ -569,37 +562,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "5/5.rb",
-					"settings":
-					{
-						"buffer_size": 599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -634,6 +598,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
 	"replace":
 	{
 		"height": 60.0
