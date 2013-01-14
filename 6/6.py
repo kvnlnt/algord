@@ -4,11 +4,7 @@ n           = 100
 sum_squares = (n*(n+1)*(2*n+1) )/6
 squares_sum = sum(range(n+1)) ** 2
 answer      = squares_sum - sum_squares
-
-print (answer)
-
-# Output
-# ------
+print       (answer)
 
 # Question
 # --------
@@ -24,6 +20,7 @@ print (answer)
 
 # Answer
 # ------
+# 25164150
 
 # Notes
 # -----
